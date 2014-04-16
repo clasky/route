@@ -1,0 +1,11 @@
+import sys
+sys.path.append('..')
+from src.node import Node
+
+class VNode(Node):
+    def __init__(self,hostname):
+        super(VNode, self).__init__(hostname)
+        self.distanceVector = []
+        
+    def addDistanceVector(distanceVector):
+        self.distanceVector = distanceVector
